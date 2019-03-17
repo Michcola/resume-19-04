@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="./main.css">
   <script src="//at.alicdn.com/t/font_451045_32zbfqegtq3t0529.js"></script>
   <style type="text/css">
-    /* .loading {
+    .loading {
       width: 200px;
       height: 200px;
       position: relative;
@@ -44,7 +44,7 @@
         height: 100px;
         opacity: 0;
       }
-    } */
+    }
 
     .icon {
       width: 1em;
@@ -74,9 +74,9 @@
 </head>
 
 <body>
-  <!-- <div id="siteWelcome" class="site-welcome active">
+  <div id="siteWelcome" class="site-welcome active">
     <div class="loading"></div>
-  </div> -->
+  </div>
   <div class="loading"></div>
   <div class="topNavBar">
     <div class="topNavBar-inner clearfix">
@@ -262,9 +262,11 @@
 
   </section>
 
-  <!-- <script>
-    siteWelcome.classList.remove('active')
-  </script> -->
+  <script>
+    setTimeout( function() {
+      siteWelcome.classList.remove('active')
+    },2000)
+  </script>
 
 </body>
 
