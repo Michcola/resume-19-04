@@ -3,9 +3,49 @@
 
 <head>
   <title>林克的个人简历</title>
-  <link rel="stylesheet" href="./a.css">
+  <link rel="stylesheet" href="./main.css">
   <script src="//at.alicdn.com/t/font_451045_32zbfqegtq3t0529.js"></script>
   <style type="text/css">
+    /* .loading {
+      width: 200px;
+      height: 200px;
+      position: relative;
+    }
+
+    .loading::before,
+    .loading::after {
+      content: '';
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      background: black;
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      animation: s 1.5s linear infinite;
+    }
+
+    .loading::after {
+      animation-delay: 0.75s
+    }
+
+    @keyframes s {
+      0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+      }
+
+      100% {
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+      }
+    } */
+
     .icon {
       width: 1em;
       height: 1em;
@@ -13,10 +53,31 @@
       fill: currentColor;
       overflow: hidden;
     }
+
+    .site-welcome {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      background: #888;
+      z-index: 1;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .site-welcome.active {
+      display: flex;
+    }
   </style>
 </head>
 
 <body>
+  <!-- <div id="siteWelcome" class="site-welcome active">
+    <div class="loading"></div>
+  </div> -->
+  <div class="loading"></div>
   <div class="topNavBar">
     <div class="topNavBar-inner clearfix">
       <a class="logo" href="#" alt="logo" style="float: left;">
@@ -101,11 +162,11 @@
     </p>
 
     <p class="selfIntroduction">
-        很久很久以前，有个被群山和森林包围着的美丽王国，名字叫Hyrule……
+      很久很久以前，有个被群山和森林包围着的美丽王国，名字叫Hyrule……
       <br> 我们
 
       就像林克的名字一样，连接了天空，大地，海洋
-      
+
       以及每一颗勇敢的心
     </p>
 
@@ -177,21 +238,21 @@
       </div>
     </nav>
     <script>
-    portfolio1.onclick=function () {
-      portfolioBar.className = 'bar state-1'
-    }
-    portfolio2.onclick=function () {
-      portfolioBar.className = 'bar state-2'
-    }
-    portfolio3.onclick=function () {
-      portfolioBar.className = 'bar state-3'
-    }
+      portfolio1.onclick = function () {
+        portfolioBar.className = 'bar state-1'
+      }
+      portfolio2.onclick = function () {
+        portfolioBar.className = 'bar state-2'
+      }
+      portfolio3.onclick = function () {
+        portfolioBar.className = 'bar state-3'
+      }
     </script>
     <div class="works" style="height:597px;">
       <div class="big" style="top : 0;left : 0;">
         <img src="./img/1.jpg" alt="作品1">
       </div>
-      <div class="small" style="top : 0;left : 645px;"> 
+      <div class="small" style="top : 0;left : 645px;">
         <img src="./img/2.jpg" alt="作品2">
       </div>
       <div class="small" style="top : 312px;left : 645px;">
@@ -200,6 +261,11 @@
     </div>
 
   </section>
+
+  <!-- <script>
+    siteWelcome.classList.remove('active')
+  </script> -->
+
 </body>
 
 </html>
