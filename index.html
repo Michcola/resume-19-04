@@ -77,7 +77,6 @@
   <div id="siteWelcome" class="site-welcome active">
     <div class="loading"></div>
   </div>
-  <div class="loading"></div>
   <div class="topNavBar">
     <div class="topNavBar-inner clearfix">
       <a class="logo" href="#" alt="logo" style="float: left;">
@@ -266,6 +265,9 @@
     setTimeout( function() {
       siteWelcome.classList.remove('active')
     },2000)
+    window.onscroll = function(xxxx){
+      console.log(window.scrollY)
+    }
   </script>
 
 </body>
