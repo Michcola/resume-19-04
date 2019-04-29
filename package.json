@@ -1,5 +1,22 @@
 {
   "dependencies": {
-    "leancloud-storage": "^3.12.0"
+    "@babel/polyfill": "^7.4.4",
+    "leancloud-storage": "^3.12.0",
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+
+  "name": "my-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "babel src -d lib"
   }
+
+  
 }
